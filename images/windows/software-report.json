@@ -57,7 +57,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Node",
-              "Version": "18.20.5"
+              "Version": "18.20.6"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -93,7 +93,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Composer",
-              "Version": "2.8.4"
+              "Version": "2.8.5"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -133,7 +133,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Vcpkg",
-              "Version": "(build from commit cf035d991)"
+              "Version": "(build from commit c7961da73)"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -388,7 +388,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Alibaba Cloud CLI",
-              "Version": "3.0.249"
+              "Version": "3.0.250"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -511,7 +511,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Mozilla Firefox",
-              "Version": "134.0.1"
+              "Version": "134.0.2"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -611,9 +611,9 @@
               "ToolName": "Node.js",
               "Versions": [
                 "16.20.2",
-                "18.20.5",
-                "20.18.1",
-                "22.13.0"
+                "18.20.6",
+                "20.18.2",
+                "22.13.1"
               ],
               "MajorVersionRegex": "^\\d+",
               "ListType": "List"
@@ -1175,7 +1175,7 @@
                   "NodeType": "ToolVersionsListNode",
                   "ToolName": "AWSPowershell",
                   "Versions": [
-                    "4.1.739"
+                    "4.1.740"
                   ],
                   "MajorVersionRegex": "^\\d+",
                   "ListType": "Inline"

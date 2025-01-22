@@ -13,7 +13,7 @@
 - Julia 1.10.5
 - Kotlin 2.1.0
 - LLVM 18.1.8
-- Node 18.20.5
+- Node 18.20.6
 - Perl 5.32.1
 - PHP 8.3.16
 - Python 3.9.13
@@ -21,7 +21,7 @@
 
 ### Package Management
 - Chocolatey 2.4.1
-- Composer 2.8.4
+- Composer 2.8.5
 - Helm 3.16.4
 - Miniconda 24.11.1 (pre-installed on the image but not added to PATH)
 - NPM 10.8.2
@@ -29,7 +29,7 @@
 - pip 24.3.1 (python 3.9)
 - Pipx 1.7.1
 - RubyGems 3.2.33
-- Vcpkg (build from commit cf035d991)
+- Vcpkg (build from commit c7961da73)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -86,7 +86,7 @@
 - zstd 1.5.6
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.249
+- Alibaba Cloud CLI 3.0.250
 - AWS CLI 2.23.2
 - AWS SAM CLI 1.132.0
 - AWS Session Manager CLI 1.2.694.0
@@ -113,7 +113,7 @@
 - Chrome Driver 132.0.6834.83
 - Microsoft Edge 132.0.2957.115
 - Microsoft Edge Driver 132.0.2957.115
-- Mozilla Firefox 134.0.1
+- Mozilla Firefox 134.0.2
 - Gecko Driver 0.35.0
 - IE Driver 4.14.0.0
 - Selenium server 4.28.0
@@ -161,9 +161,9 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 
 #### Node.js
 - 16.20.2
-- 18.20.5
-- 20.18.1
-- 22.13.0
+- 18.20.6
+- 20.18.2
+- 22.13.1
 
 #### Python
 - 3.8.10
@@ -502,7 +502,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - AzureRM: 6.13.1
 - Azure (Cached): 5.1.1.zip
 - AzureRM (Cached): 6.7.0.zip
-- AWSPowershell: 4.1.739
+- AWSPowershell: 4.1.740
 - DockerMsftProvider: 1.0.0.8
 - MarkdownPS: 1.10
 - Microsoft.Graph: 2.25.0

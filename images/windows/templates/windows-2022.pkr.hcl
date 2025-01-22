@@ -451,6 +451,10 @@ build {
       "${path.root}/../scripts/build/Install-NativeImages.ps1",
       "${path.root}/../scripts/build/Configure-System.ps1",
       "${path.root}/../scripts/build/Configure-User.ps1"
+      "Set-Service RdAgent -StartupType Disabled", # Add this line, disables the VM agent (WaAppAgent)
+      "Set-Service WindowsAzureTelemetryService -StartupType Disabled", # Add this line, disables the Windows Azure Agent Telemetry Service
+      "Set-Service WindowsAzureGuestAgent -StartupType Disabled", # Add this line, disables the Windows Azure Guest Agent
+      "Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Setup\\SysPrepExternal\\Generalize' -Name '*'" # Add this line, clears any Sysprep entries prior to running the actual sysprep command in our inline code
     ]
     skip_clean       = true
   }
@@ -466,5 +470,4 @@ build {
       "while($true) { $imageState = Get-ItemProperty HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Setup\\State | Select ImageState; if($imageState.ImageState -ne 'IMAGE_STATE_GENERALIZE_RESEAL_TO_OOBE') { Write-Output $imageState.ImageState; Start-Sleep -s 10 } else { break } }"
     ]
   }
-
 }

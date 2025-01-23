@@ -132,15 +132,15 @@ Function GenerateResourcesAndImage {
         [Parameter(Mandatory = $False)]
         [string] $ResourceGroupName = "rg-djd-img-gen-dev-01",
         [Parameter(Mandatory = $False)]
-        [ImageType] $ImageType = "Windows2022minimal",
+        [ImageType] $ImageType = "Windows2022",
         [Parameter(Mandatory = $False)]
         [string] $ManagedImageName = "Runner-Image-$($ImageType)",
         [Parameter(Mandatory = $False)]
-        [string] $AzureLocation = "West Central US",
+        [string] $AzureLocation = "West US 3",
         [Parameter(Mandatory = $False)]
         [string] $ImageGenerationRepositoryRoot = $pwd,
         [Parameter(Mandatory = $False)]
-        [int] $SecondsToWaitForServicePrincipalSetup = 120,
+        [int] $SecondsToWaitForServicePrincipalSetup = 60,
         [Parameter(Mandatory = $False)]
         [string] $AzureClientId,
         [Parameter(Mandatory = $False)]

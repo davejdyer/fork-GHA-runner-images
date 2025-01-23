@@ -446,15 +446,20 @@ build {
   }
 
   provisioner "powershell" {
+    inline = [
+      "Set-Service RdAgent -StartupType Disabled", # Add this line, disables the VM agent (WaAppAgent)
+      "Set-Service WindowsAzureTelemetryService -StartupType Disabled", # Add this line, disables the Windows Azure Agent Telemetry Service
+      "Set-Service WindowsAzureGuestAgent -StartupType Disabled", # Add this line, disables the Windows Azure Guest Agent
+      "Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Setup\\SysPrepExternal\\Generalize' -Name '*'" # Add this line, clears any Sysprep entries prior to running the actual sysprep command in our inline code
+    ]
+  }
+
+  provisioner "powershell" {
     environment_vars = ["INSTALL_USER=${var.install_user}"]
     scripts          = [
       "${path.root}/../scripts/build/Install-NativeImages.ps1",
       "${path.root}/../scripts/build/Configure-System.ps1",
       "${path.root}/../scripts/build/Configure-User.ps1"
-      "Set-Service RdAgent -StartupType Disabled", # Add this line, disables the VM agent (WaAppAgent)
-      "Set-Service WindowsAzureTelemetryService -StartupType Disabled", # Add this line, disables the Windows Azure Agent Telemetry Service
-      "Set-Service WindowsAzureGuestAgent -StartupType Disabled", # Add this line, disables the Windows Azure Guest Agent
-      "Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Setup\\SysPrepExternal\\Generalize' -Name '*'" # Add this line, clears any Sysprep entries prior to running the actual sysprep command in our inline code
     ]
     skip_clean       = true
   }

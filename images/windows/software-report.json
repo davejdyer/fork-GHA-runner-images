@@ -133,7 +133,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Vcpkg",
-              "Version": "(build from commit c7961da73)"
+              "Version": "(build from commit 01be99fec)"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -327,7 +327,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Pulumi",
-              "Version": "3.146.0"
+              "Version": "3.147.0"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -393,7 +393,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "AWS CLI",
-              "Version": "2.23.2"
+              "Version": "2.23.3"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -491,12 +491,12 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Google Chrome",
-              "Version": "132.0.6834.84"
+              "Version": "132.0.6834.111"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Chrome Driver",
-              "Version": "132.0.6834.83"
+              "Version": "132.0.6834.110"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -553,8 +553,8 @@
             "Rows": [
               "8.0.432+6 (default)|JAVA_HOME_8_X64",
               "11.0.25+9|JAVA_HOME_11_X64",
-              "17.0.13+11|JAVA_HOME_17_X64",
-              "21.0.5+11.0|JAVA_HOME_21_X64"
+              "17.0.14+7|JAVA_HOME_17_X64",
+              "21.0.6+7.0|JAVA_HOME_21_X64"
             ]
           }
         },
@@ -1175,7 +1175,7 @@
                   "NodeType": "ToolVersionsListNode",
                   "ToolName": "AWSPowershell",
                   "Versions": [
-                    "4.1.740"
+                    "4.1.741"
                   ],
                   "MajorVersionRegex": "^\\d+",
                   "ListType": "Inline"

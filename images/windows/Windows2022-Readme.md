@@ -29,7 +29,7 @@
 - pip 24.3.1 (python 3.9)
 - Pipx 1.7.1
 - RubyGems 3.2.33
-- Vcpkg (build from commit c7961da73)
+- Vcpkg (build from commit 01be99fec)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -73,7 +73,7 @@
 - NSIS 3.10
 - OpenSSL 1.1.1w
 - Packer 1.11.2
-- Pulumi 3.146.0
+- Pulumi 3.147.0
 - R 4.4.2
 - Service Fabric SDK 9.1.1436.9590
 - Stack 3.3.1
@@ -87,7 +87,7 @@
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.250
-- AWS CLI 2.23.2
+- AWS CLI 2.23.3
 - AWS SAM CLI 1.132.0
 - AWS Session Manager CLI 1.2.694.0
 - Azure CLI 2.68.0
@@ -109,8 +109,8 @@
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 132.0.6834.84
-- Chrome Driver 132.0.6834.83
+- Google Chrome 132.0.6834.111
+- Chrome Driver 132.0.6834.110
 - Microsoft Edge 132.0.2957.115
 - Microsoft Edge Driver 132.0.2957.115
 - Mozilla Firefox 134.0.2
@@ -131,8 +131,8 @@
 | ------------------- | -------------------- |
 | 8.0.432+6 (default) | JAVA_HOME_8_X64      |
 | 11.0.25+9           | JAVA_HOME_11_X64     |
-| 17.0.13+11          | JAVA_HOME_17_X64     |
-| 21.0.5+11.0         | JAVA_HOME_21_X64     |
+| 17.0.14+7           | JAVA_HOME_17_X64     |
+| 21.0.6+7.0          | JAVA_HOME_21_X64     |
 
 ### Shells
 | Name          | Target                            |
@@ -502,7 +502,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - AzureRM: 6.13.1
 - Azure (Cached): 5.1.1.zip
 - AzureRM (Cached): 6.7.0.zip
-- AWSPowershell: 4.1.740
+- AWSPowershell: 4.1.741
 - DockerMsftProvider: 1.0.0.8
 - MarkdownPS: 1.10
 - Microsoft.Graph: 2.25.0
